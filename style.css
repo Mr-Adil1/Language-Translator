@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom left, rgb(255, 60, 60), rgb(231, 98, 9));
+}
+
+.container {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.inputs {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    position: relative;
+}
+
+.inputs textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    line-break: auto;
+}
+
+.inputs textarea::placeholder {
+    font-size: 25px;
+    text-align: start;
+    color: rgb(231, 98, 9);
+}
+
+.inputs .copy {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: green;
+}
+
+.inputs .copy-right {
+    left: 70%;
+}
+
+.inputs .copy-from,
+.inputs .copy-to {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.copyactive {
+    opacity: 1;
+}
+
+.buttons {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.buttons .fa {
+    color: rgb(255, 60, 60);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.buttons select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.buttons .fa:hover {
+    color: rgb(231, 98, 9);
+}
+
+.active {
+    transform: rotateY(-190deg);
+}
+
+
+/* .buttons .bx-repost:hover {
+    transform: rotateY(190deg);
+} */
+
+.translate-btn {
+    width: 100%;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s linear;
+    background: linear-gradient(to bottom left, rgb(255, 60, 60), rgb(231, 98, 9));
+}
+
+.translate-btn:hover {
+    background: linear-gradient(to bottom right, rgb(255, 60, 60), rgb(231, 98, 9));
+}
+
+@media (max-width:500px) {
+    .inputs textarea {
+        margin: 10px;
+        font-size: 15px;
+        height: 150px;
+    }
+    .buttons {
+        justify-content: space-between;
+    }
+    .buttons .fa {
+        font-size: 15px;
+    }
+    .buttons select {
+        width: 90px;
+    }
+}
