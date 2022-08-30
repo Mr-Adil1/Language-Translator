@@ -1,1 +1,1 @@
-# Language-Translator link : https://mrdeveloperr.github.io/Language-Translator/index.html
+# Language-Translator link :https://mr-adil1.github.io/Language-Translator/
